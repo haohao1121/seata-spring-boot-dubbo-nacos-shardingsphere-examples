@@ -35,23 +35,5 @@ docker run -d --name seata-server \
   -v /etc/localtime:/etc/localtime:ro \
   apache/seata-server:2.5.0
 
-#或者使用下面的方式
-docker run -d --name seata-server \
-  --network lli-net \
-  -p 8091:8091 -p 7091:7091 \
-  -e TZ=Asia/Shanghai \
-  -e SEATA_IP=<宿主机IP> \
-  -e SEATA_REGISTRY_TYPE=nacos \
-  -e SEATA_REGISTRY_NACOS_SERVERADDR=nacos:8848 \
-  -e SEATA_REGISTRY_NACOS_GROUP=SEATA_GROUP \
-  -e SEATA_REGISTRY_NACOS_NAMESPACE= \
-  -e SEATA_CONFIG_TYPE=nacos \
-  -e SEATA_CONFIG_NACOS_SERVERADDR=nacos:8848 \
-  -e SEATA_CONFIG_NACOS_GROUP=SEATA_GROUP \
-  -e SEATA_CONFIG_NACOS_NAMESPACE= \
-  -e SEATA_CONFIG_NACOS_DATAID=seataServer.properties \
-  -v /Users/lihao/Seata-Volume/libs:/seata-server/libs \
-  apache/seata-server:2.5.0
-
 
 

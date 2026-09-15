@@ -1,0 +1,12 @@
+/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-common-service/src/main/java/io/seata/samples/integration/common/dto/BusinessDTO.java
+/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-common-service/src/main/java/io/seata/samples/integration/common/response/ObjectResponse.java
+/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-common-service/src/main/java/io/seata/samples/integration/common/dto/OrderDTO.java
+/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-common-service/src/main/java/io/seata/samples/integration/common/dto/CommodityDTO.java
+/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-common-service/src/main/java/io/seata/samples/integration/common/dubbo/StorageDubboService.java
+/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-common-service/src/main/java/io/seata/samples/integration/common/response/BaseResponse.java
+/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-common-service/src/main/java/io/seata/samples/integration/common/aop/GlobalExceptionHandler.java
+/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-common-service/src/main/java/io/seata/samples/integration/common/enums/RspStatusEnum.java
+/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-common-service/src/main/java/io/seata/samples/integration/common/dubbo/OrderDubboService.java
+/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-common-service/src/main/java/io/seata/samples/integration/common/dto/AccountDTO.java
+/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-common-service/src/main/java/io/seata/samples/integration/common/exception/DefaultException.java
+/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-common-service/src/main/java/io/seata/samples/integration/common/dubbo/AccountDubboService.java

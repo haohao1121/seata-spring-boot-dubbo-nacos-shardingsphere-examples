@@ -1,0 +1,29 @@
+dataSources:
+  ds0:
+    dataSourceClassName: com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    jdbcUrl: jdbc:mysql://127.0.0.1:3306/ds0?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+rules:
+  - !SHARDING
+    tables:
+      t_account:
+        actualDataNodes: ds0.t_account$->{0..1}
+        tableStrategy:
+          standard:
+            shardingColumn: id
+            shardingAlgorithmName: t_account_inline
+    shardingAlgorithms:
+      t_account_inline:
+        type: INLINE
+        props:
+          algorithm-expression: t_account$->{id % 2}
+
+props:
+  sql-show: true
+
+transaction:
+  defaultType: BASE
+  providerType: Seata

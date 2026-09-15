@@ -1,0 +1,57 @@
+server:
+  port: 8102
+spring:
+  datasource:
+    driver-class-name: org.apache.shardingsphere.driver.ShardingSphereDriver
+    url: jdbc:shardingsphere:classpath:sharding.yaml
+
+#====================================Dubbo config===============================================
+dubbo:
+  application:
+    name: dubbo-account-example
+    qosEnable: false
+  protocol:
+    name: dubbo
+    port: 20883
+  registry:
+    address: nacos://127.0.0.1:8848?namespace=lli-dubbo-seata-nacos-mysql&username=nacos&password=nacos
+#====================================mybatis-plus config===============================================
+mybatis-plus:
+  mapperLocations: classpath*:/mapper/*.xml
+  typeAliasesPackage: io.seata.samples.integration.*.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+#====================================Seata Config===============================================
+
+seata:
+  enabled: true
+  application-id: account-seata-example
+  tx-service-group: default_tx_group
+  service:
+    vgroup-mapping:
+      default_tx_group: default
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: localhost:8848
+      namespace: lli-dubbo-seata-nacos-mysql
+      group: SEATA_GROUP
+      cluster: default
+      username: nacos
+      password: nacos
+  config:
+    type: nacos
+    nacos:
+      server-addr: localhost:8848
+      namespace: lli-dubbo-seata-nacos-mysql
+      group: SEATA_GROUP
+      dataId: seataServer.properties
+      username: nacos
+      password: nacos
+  enable-auto-data-source-proxy: false

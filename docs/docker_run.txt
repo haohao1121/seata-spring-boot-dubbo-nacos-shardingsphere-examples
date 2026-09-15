@@ -1,0 +1,57 @@
+# mysql-8
+docker run -d \
+  --name mysql8 \
+  --network lli-net \
+  -p 3306:3306 \
+  -e MYSQL_ROOT_PASSWORD=123456 \
+  -e TZ=Asia/Shanghai \
+  mysql:8.0 \
+  --character-set-server=utf8mb4 \
+  --collation-server=utf8mb4_unicode_ci \
+  --default-authentication-plugin=mysql_native_password
+
+# nacos-standalone-derby
+docker run --name nacos-standalone-derby \
+  --network lli-net \
+  -e MODE=standalone \
+  -e TZ=Asia/Shanghai \
+  -e NACOS_AUTH_ENABLE=true \
+  -e NACOS_AUTH_TOKEN=$(echo -n "my-nacos-secret-key-at-least-32-chars" | base64) \
+  -e NACOS_AUTH_IDENTITY_KEY=lli \
+  -e NACOS_AUTH_IDENTITY_VALUE=lli \
+  -p 8848:8848 \
+  -p 9848:9848 \
+  -d nacos/nacos-server:v2.5.4
+
+# seata
+# https://devpress.csdn.net/awstech/6a925adf3bda720d4b36dc72.html  参考部署mysql方式
+docker run -d --name seata-server \
+  --network lli-net \
+  -p 8091:8091 -p 7091:7091 \
+  -e TZ=Asia/Shanghai \
+  -e SEATA_IP=<宿主机IP> \
+  -v /Users/lihao/Seata-Volume/resources:/seata-server/resources \
+  -v /Users/lihao/Seata-Volume/libs:/seata-server/libs \
+  -v /etc/localtime:/etc/localtime:ro \
+  apache/seata-server:2.5.0
+
+#或者使用下面的方式
+docker run -d --name seata-server \
+  --network lli-net \
+  -p 8091:8091 -p 7091:7091 \
+  -e TZ=Asia/Shanghai \
+  -e SEATA_IP=<宿主机IP> \
+  -e SEATA_REGISTRY_TYPE=nacos \
+  -e SEATA_REGISTRY_NACOS_SERVERADDR=nacos:8848 \
+  -e SEATA_REGISTRY_NACOS_GROUP=SEATA_GROUP \
+  -e SEATA_REGISTRY_NACOS_NAMESPACE= \
+  -e SEATA_CONFIG_TYPE=nacos \
+  -e SEATA_CONFIG_NACOS_SERVERADDR=nacos:8848 \
+  -e SEATA_CONFIG_NACOS_GROUP=SEATA_GROUP \
+  -e SEATA_CONFIG_NACOS_NAMESPACE= \
+  -e SEATA_CONFIG_NACOS_DATAID=seataServer.properties \
+  -v /Users/lihao/Seata-Volume/libs:/seata-server/libs \
+  apache/seata-server:2.5.0
+
+
+

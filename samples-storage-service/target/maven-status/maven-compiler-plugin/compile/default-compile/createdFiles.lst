@@ -1,0 +1,7 @@
+io/seata/samples/integration/storage/dubbo/StorageDubboServiceImpl.class
+io/seata/samples/integration/storage/entity/TStorage.class
+io/seata/samples/integration/storage/service/ITStorageService.class
+io/seata/samples/integration/storage/mapper/TStorageMapper.class
+io/seata/samples/integration/storage/controller/TStorageController.class
+io/seata/samples/integration/storage/service/TStorageServiceImpl.class
+io/seata/samples/integration/storage/StorageExampleApplication.class

@@ -1,7 +1,0 @@
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-storage-service/src/main/java/io/seata/samples/integration/storage/service/ITStorageService.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-storage-service/src/main/java/io/seata/samples/integration/storage/controller/TStorageController.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-storage-service/src/main/java/io/seata/samples/integration/storage/StorageExampleApplication.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-storage-service/src/main/java/io/seata/samples/integration/storage/entity/TStorage.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-storage-service/src/main/java/io/seata/samples/integration/storage/service/TStorageServiceImpl.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-storage-service/src/main/java/io/seata/samples/integration/storage/mapper/TStorageMapper.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-storage-service/src/main/java/io/seata/samples/integration/storage/dubbo/StorageDubboServiceImpl.java

@@ -1,7 +1,0 @@
-io/seata/samples/integration/account/entity/TAccount.class
-io/seata/samples/integration/account/mapper/TAccountMapper.class
-io/seata/samples/integration/account/controller/TAccountController.class
-io/seata/samples/integration/account/service/TAccountServiceImpl.class
-io/seata/samples/integration/account/dubbo/AccountDubboServiceImpl.class
-io/seata/samples/integration/account/service/ITAccountService.class
-io/seata/samples/integration/account/AccountExampleApplication.class

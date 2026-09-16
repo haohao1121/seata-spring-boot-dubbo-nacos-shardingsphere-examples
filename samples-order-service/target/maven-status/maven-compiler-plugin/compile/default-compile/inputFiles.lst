@@ -1,7 +1,0 @@
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-order-service/src/main/java/io/seata/samples/integration/order/controller/TOrderController.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-order-service/src/main/java/io/seata/samples/integration/order/service/ITOrderService.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-order-service/src/main/java/io/seata/samples/integration/order/mapper/TOrderMapper.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-order-service/src/main/java/io/seata/samples/integration/order/service/TOrderServiceImpl.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-order-service/src/main/java/io/seata/samples/integration/order/dubbo/OrderDubboServiceImpl.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-order-service/src/main/java/io/seata/samples/integration/order/entity/TOrder.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-order-service/src/main/java/io/seata/samples/integration/order/OrderExampleApplication.java

@@ -1,7 +1,0 @@
-io/seata/samples/integration/order/OrderExampleApplication.class
-io/seata/samples/integration/order/service/TOrderServiceImpl.class
-io/seata/samples/integration/order/dubbo/OrderDubboServiceImpl.class
-io/seata/samples/integration/order/service/ITOrderService.class
-io/seata/samples/integration/order/mapper/TOrderMapper.class
-io/seata/samples/integration/order/controller/TOrderController.class
-io/seata/samples/integration/order/entity/TOrder.class

@@ -1,7 +1,0 @@
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-account-service/src/main/java/io/seata/samples/integration/account/entity/TAccount.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-account-service/src/main/java/io/seata/samples/integration/account/mapper/TAccountMapper.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-account-service/src/main/java/io/seata/samples/integration/account/dubbo/AccountDubboServiceImpl.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-account-service/src/main/java/io/seata/samples/integration/account/service/ITAccountService.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-account-service/src/main/java/io/seata/samples/integration/account/controller/TAccountController.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-account-service/src/main/java/io/seata/samples/integration/account/AccountExampleApplication.java
-/Users/lli/Documents/Workspace/IDEA_Workspace/Github/seata-spring-boot-dubbo-nacos-shardingsphere-examples/samples-account-service/src/main/java/io/seata/samples/integration/account/service/TAccountServiceImpl.java

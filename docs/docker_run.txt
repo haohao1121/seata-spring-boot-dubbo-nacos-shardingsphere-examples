@@ -1,16 +1,15 @@
-# mysql-8
+# =======================================mysql-8
 docker run -d \
-  --name mysql8 \
+  --name mysql \
   --network lli-net \
   -p 3306:3306 \
   -e MYSQL_ROOT_PASSWORD=123456 \
   -e TZ=Asia/Shanghai \
-  mysql:8.0 \
+  mysql:8.4.6 \
   --character-set-server=utf8mb4 \
-  --collation-server=utf8mb4_unicode_ci \
-  --default-authentication-plugin=mysql_native_password
+  --collation-server=utf8mb4_unicode_ci
 
-# nacos-standalone-derby
+# =======================================nacos-standalone-derby
 docker run --name nacos-standalone-derby \
   --network lli-net \
   -e MODE=standalone \
@@ -23,8 +22,14 @@ docker run --name nacos-standalone-derby \
   -p 9848:9848 \
   -d nacos/nacos-server:v2.5.4
 
-# seata
+# =======================================seata
 # https://devpress.csdn.net/awstech/6a925adf3bda720d4b36dc72.html  参考部署mysql方式
+# 启动一个临时的容器,拷贝出来lib和resource文件夹 到你的容器挂载目录 比如我的: /Users/lihao/Seata-Volume
+# docker run -d -p 8091:8091 -p 7091:7091  --name seata-server250 apache/seata-server:2.5.0
+# docker cp seata-server250:/seata-server/resources /Users/lihao/Seata-Volume/resources
+# docker cp seata-server250:/seata-server/libs /Users/lihao/Seata-Volume/libs
+# 修改 resources 里的application.yml ,可以参考 application.example.yml 示例,修改之后,运行下面的脚本
+
 docker run -d --name seata-server \
   --network lli-net \
   -p 8091:8091 -p 7091:7091 \
